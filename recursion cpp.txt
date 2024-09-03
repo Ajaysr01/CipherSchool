@@ -1,0 +1,72 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool palindrome(string ch,int l, int r){
+    
+    if(l>=r){
+        return true;
+    }
+    if(ch[l] != ch[r]){
+        return false;
+    }
+    return palindrome(ch,l+1, r-1);
+    
+}
+
+
+
+int main() {
+    string ch = "madam";
+    int n = ch.length();
+    bool res = palindrome(ch, 0, n-1);
+    if (res){
+        cout<<"true";
+    }else {
+        cout << "false";
+    }
+    
+}
+
+
+    // cout << power(5,3);
+    // return 0;
+int power(int x, int n){
+    if(n==0){
+        return 1;
+    }else {
+        return x*power(x,n-1);
+    }
+}
+
+    // Write C++ code here
+    // std::cout << "Try programiz.pro"<<endl;
+    // int arr[5] = {1,6,5,5,3};
+    // int tar = 2;
+int lastOcc(int i, int arr[], int tar){
+    if (i<0){
+        return -1;
+    }
+        
+    if(arr[i]==tar){
+        return i;
+    }else {
+        return lastOcc(i-1,arr,tar);
+    }
+    
+}
+
+
+
+
+2. Write a recursive function to count the number 
+   of digits in an integer.
+
+int countDig(int n){
+    if(n==0){
+        return 0;
+    }
+    return 1+ countDig(n/10);
+    
+}
