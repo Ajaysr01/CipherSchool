@@ -1,3 +1,4 @@
+# program to concatenate two given strings
 #include <iostream>
 #include <string>
 using namespace std;
