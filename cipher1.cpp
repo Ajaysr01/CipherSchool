@@ -3,13 +3,16 @@
 #include <string>
 using namespace std;
 
+int stringLength(const string &str){
+   return str.size();
+}
+
 int main(){
-    string s1, s2;
-   cin>>s1>>s2;
-
-   string res = s1+s2;
-
-   cout << res;
+   string str1 = "Hello world";
+   cout << "Length of given string is : "<< stringLength(str1)<<endl;
+   
+   string str2 = "New String";
+   cout << "Length of given string is : "<< stringLength(str2)<<endl;
 
    return 0;
 }
