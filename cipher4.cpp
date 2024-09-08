@@ -18,8 +18,7 @@ int binarySearch(int arr[], int size, int tar){
 }
 
 
-int main()
-{
+int main(){
 
     int arr[5] = {1,3,6,8,9};
     int tar = 9;
@@ -38,4 +37,5 @@ int main()
     cout << res;
 
     return 0;
+    
 }
