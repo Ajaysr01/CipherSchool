@@ -65,6 +65,11 @@ int main()
     printLL(head);
 
 
+    // dynamic variable using new keyword
+    int var = 5;
+    int* ptr = new int(var);
+    cout << *ptr;
+
 
  return 0;
 }

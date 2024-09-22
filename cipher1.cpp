@@ -8,11 +8,15 @@ int stringLength(const string &str){
 }
 
 int main(){
-   string str1 = "Hello world";
-   cout << "Length of given string is : "<< stringLength(str1)<<endl;
+   // string str1 = "Hello world";
+   // cout << "Length of given string is : "<< stringLength(str1)<<endl;
    
-   string str2 = "New String";
-   cout << "Length of given string is : "<< stringLength(str2)<<endl;
+   int var = 5;
+   int* ptr = new int(var);
+   cout << *ptr;
+   
+   // string str2 = "New String";
+   // cout << "Length of given string is : "<< stringLength(str2)<<endl;
 
    return 0;
 }
